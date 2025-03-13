@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        #game-section, #leaderboard { display: none; }
+        .hidden { display: none; }
+        .btn { padding: 10px 20px; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="login-section">
+        <h1>Welcome to the Memory Game</h1>
+        <input type="text" id="username" placeholder="Enter your name" />
+        <button id="login-btn" class="btn">Login</button>
+    </div>
+
+    <div id="game-section">
+        <h2 id="welcome-message"></h2>
+        <div id="game-board">Game content here...</div>
+        <button id="save-state-btn" class="btn">Save Progress</button>
+        <button id="view-leaderboard-btn" class="btn">View Leaderboard</button>
+    </div>
+
+    <div id="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard-list"></ul>
+        <button id="back-to-game-btn" class="btn">Back to Game</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Memory</title>
+        <link rel="stylesheet", href="style.css">
+    </head>
+    <body>
+
+        <div class="Memory">
+            <h2>MemoryGame<span id="memoryID"></span></h2>
+            <button class="restartbutton" onClick="window.location.reload();">
+                Restart Game
+            </button>
+            <button class="exitbutton" onclick="window.open('', '_self', ''); window.close();">
+                Exit Game
+            </button>
+        </div>
+        <div class="frame169"> <!--Player 1 scoreboard-->
+            <img class="balloon" src="wolv.jpg">
+            <div class="Player1" data-id="P1">
+                <h2>Player 1</h2>
+                <h2>Score:   <span id="score1"></span></h2>
+            </div>
+        </div>
+
+       <div id="turnIndicator" style="text-align: center; font-size: 24px; margin-top: 20px; color: white; font-weight: bold;">
+    <!-- Player's turn will be displayed here -->
+</div>
+
+        
+        
+        <!--Grid with cards--> 
+        <!-- ff = front face, bb = backface-->
+        <section class="board">
+            <!-- 1a to 15b cards -->
+            <div class="card" data-id="1a">
+                <img class="ff" src="pizza.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="1a">
+                <img class="ff" src="pizza.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="2a">
+                <img class="ff" src="milkshake.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="2a">
+                <img class="ff" src="milkshake.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="3a">
+                <img class="ff" src="ice-cream.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="3a">
+                <img class="ff" src="ice-cream.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="4a">
+                <img class="ff" src="hotdog.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="4a">
+                <img class="ff" src="hotdog.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="5a">
+                <img class="ff" src="fries.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="5a">
+                <img class="ff" src="fries.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="6a">
+                <img class="ff" src="cheeseburger.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="6a">
+                <img class="ff" src="cheeseburger.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="7a">
+                <img class="ff" src="tacos.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="7a">
+                <img class="ff" src="tacos.png"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="8a">
+                <img class="ff" src="noodle.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="8a">
+                <img class="ff" src="noodle.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="9a">
+                <img class="ff" src="pastry.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="9a">
+                <img class="ff" src="pastry.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="10a">
+                <img class="ff" src="donut.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="10a">
+                <img class="ff" src="donut.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="11a">
+                <img class="ff" src="chick.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="11a">
+                <img class="ff" src="chick.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="12a">
+                <img class="ff" src="cheese.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="12a">
+                <img class="ff" src="cheese.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="13a">
+                <img class="ff" src="pies.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="13a">
+                <img class="ff" src="pies.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="14a">
+                <img class="ff" src="cake.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+            <div class="card" data-id="14a">
+                <img class="ff" src="cake.jpg"/>
+                <img class="bb" src="Card_Back.png"/>
+            </div>
+         
+        </section>
+        
+        <div class="frame170"> <!--Player 2 scoreboard-->
+            <img class="Rocket" src="dpool.jpg">
+            <div class="Player2" data-id="P2">
+                <h2>Player 2</h2>
+                <h2>Score: <span id="score2"></span></h2>
+            </div>
+        </div>
+        <script src="game.js"></script>
+    </body>
+</html>
